@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Website Rumah Saklit</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+  <link rel="icon" type="image/svg+xml" href="img/Logo Plus.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+	<!--------header---->
+	<header>
+		<a href="#" class="logo"><img src="img/Logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navlist">
+			<li><a href="#home" class="active">Beranda</a></li>
+			<li><a href="#about">Tentang Kami</a></li>
+			<li><a href="#portfolio">Profile Dokter</a></li>
+			<li><a href="#service">Layanan</a></li>
+			<li><a href="#contact">Hubungi Kami</a></li>
+		</ul>
+	</header>
+
+	<!--------home---->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h3>Hai! Kami</h3>
+			<h1>Rumah Sakit ABC</h1>
+			<h5>Layanan Kesehatan Terbaik <span>dari Bekasi</span></h5>
+			<p>Kami menyediakan layanan kesehatan berkualitas tinggi dengan tenaga medis yang kompeten dan fasilitas modern.</p>
+			<div class="social">
+				<a href=""><i class='bx bxl-facebook'></i></a>
+				<a href=""><i class='bx bxl-twitter' ></i></a>
+				<a href=""><i class='bx bxl-instagram'></i></i></a>
+			</div>
+			<a href="#about" class="btn">Kenalan kami lebih dekat</a>
+		</div>
+
+		<div class="home-img">
+			<img src="img/profile.png">
+		</div>
+	</section>
+
+	<!--------skill---->
+	<section class="sub-service">
+		</div>
+		<div class="items">
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/medal-svgrepo-com.svg">
+				</div>
+				<h3>Akreditasi</h3>
+				<p>Terakreditasi Paripurna oleh KARS sebagai bukti komitmen kami terhadap standar mutu dan keselamatan pasien tertinggi.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/sertificate-svgrepo-com.svg">
+				</div>
+				<h3>Sertifikasi</h3>
+				<p>Tersertifikasi ISO 9001 dan ISO 27001 untuk menjamin tata kelola operasional modern serta keamanan data rekam medis.</p>
+			</div>
+
+			<div class="sub-box">
+				<div class="sub-img">
+					<img src="img/trophy-svgrepo-com.svg">
+				</div>
+				<h3>Penghargaan</h3>
+				<p>Meraih predikat Layanan Unggulan Terbaik serta penghargaan komitmen pelayanan kesehatan optimal dari Kementerian Kesehatan.</p>
+			</div>
+		</div>
+	</section>
+
+	<!--------About---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/Pelayanan Rumah Sakit.png">
+		</div>
+
+		<div class="about-text">
+			<h3>Rumah Sakit ABC</h3>
+			<h2>Membantu Anda Menemukan Kesehatan Terbaik</h2>
+			<p>Kami menyediakan layanan kesehatan berkualitas tinggi dengan tenaga medis yang kompeten dan fasilitas modern. Dengan pendekatan yang holistik, kami berkomitmen untuk memberikan perawatan terbaik kepada setiap pasien.</p>
+			<a href="#contact" class="btn">Hubungi Kami</a>
+		</div>
+	</section>
+
+	<!--------portfolio---->
+	<section class="portfolio" id="portfolio">
+		<div class="heading">
+			<h3>Profile Dokter</h3>
+			<h2>Para Dokter Kami</h2>
+			<p>yang ahli dalam bidangnya<br> dan berpengalaman</p>
+		</div>
+
+		<div class="portfolio-filter">
+			<button class="filter-btn active" data-filter="semua">Semua Dokter</button>
+			<button class="filter-btn" data-filter="Dokter-Umum">Dokter Umum</button>
+			<button class="filter-btn" data-filter="Dokter-Spesialis">Dokter Spesialis</button>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="col" data-category="Dokter-Umum" data-description="Berpengalaman dalam penanganan medis tingkat pertama, pemeriksaan kesehatan rutin (medical check-up), serta tata laksana kasus kegawatdaruratan umum dengan pendekatan yang ramah dan komunikatif.">
+				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Eric Marvin">
+				<div class="layer">
+					<h3>Dokter Eric Marvin</h3>
+					<h5>Dokter Umum</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+			<div class="col" data-category="Dokter-Spesialis" data-description="Ahli dalam diagnosis, pencegahan, dan penanganan penyakit kardiovaskular, termasuk hipertensi, penyakit jantung koroner, serta pemantauan rehabilitasi jantung terpadu.">
+				<img src="img/Dokter PR.jpg" alt="Foto Dokter Siti Aisyah">
+				<div class="layer">
+					<h3>Dokter Siti Aisyah</h3>
+					<h5>Dokter Spesialis Jantung</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+			<div class="col" data-category="Dokter-Spesialis" data-description="Berfokus pada pemeriksaan kesehatan indra penglihatan secara menyeluruh, penanganan gangguan refraksi, katarak, glaukoma, serta tindakan bedah mikro mata modern.">
+				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Haris Hartanto">
+				<div class="layer">
+					<h3>Dokter Haris Hartanto</h3>
+					<h5>Dokter Spesialis Mata</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+			<div class="col" data-category="Dokter-Spesialis" data-description="Menangani berbagai permasalahan kesehatan kulit, alergi, infeksi kulit, hingga perawatan peremajaan dan estetika medis berbasis klinis yang aman bagi pasien.">
+				<img src="img/Dokter PR.jpg" alt="Foto Dokter Ester Flora">
+				<div class="layer">
+					<h3>Dokter Ester Flora</h3>
+					<h5>Dokter Spesialis Kulit</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+			<div class="col" data-category="Dokter-Umum" data-description="Berdedikasi memberikan pelayanan konsultasi kesehatan keluarga, imunisasi, perawatan luka, serta edukasi pencegahan penyakit dengan ketelitian dan empati tinggi.">
+				<img src="img/Dokter PR.jpg" alt="Foto Dokter Putri Nuraini">
+				<div class="layer">
+					<h3>Dokter Putri Nuraini</h3>
+					<h5>Dokter Umum</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+			<div class="col" data-category="Dokter-Spesialis" data-description="Berpengalaman dalam menangani gangguan sistem saraf pusat dan tepi, termasuk penanganan kasus stroke, migrain kronis, vertigo, saraf terjepit, serta gangguan memori.">
+				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Ahmad Rifai">
+				<div class="layer">
+					<h3>Dokter Ahmad Rifai</h3>
+					<h5>Dokter Spesialis Saraf</h5>
+					<button class="profile-button" type="button">Lihat Profil</button>
+				</div>
+			</div>
+
+		</div>
+		<dialog class="doctor-dialog" aria-labelledby="doctor-dialog-name">
+			<button class="doctor-dialog-close" type="button" aria-label="Tutup profil">&times;</button>
+			<div class="doctor-dialog-content">
+				<img class="doctor-dialog-image" src="" alt="">
+				<div class="doctor-dialog-details">
+					<h2 id="doctor-dialog-name"></h2>
+					<p class="doctor-dialog-specialty"></p>
+					<p class="doctor-dialog-description"></p>
+				</div>
+			</div>
+		</dialog>
+	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const filterButtons = document.querySelectorAll('.filter-btn');
+			const portfolioItems = document.querySelectorAll('.portfolio-content .col');
+			const navLinks = document.querySelectorAll('.navlist a');
+			const sections = document.querySelectorAll('section[id]');
+			const doctorDialog = document.querySelector('.doctor-dialog');
+			const doctorDialogImage = doctorDialog.querySelector('.doctor-dialog-image');
+			const doctorDialogName = doctorDialog.querySelector('#doctor-dialog-name');
+			const doctorDialogSpecialty = doctorDialog.querySelector('.doctor-dialog-specialty');
+			const doctorDialogDescription = doctorDialog.querySelector('.doctor-dialog-description');
+			const doctorDialogClose = doctorDialog.querySelector('.doctor-dialog-close');
+
+			filterButtons.forEach(button => {
+				button.addEventListener('click', () => {
+					const filter = button.getAttribute('data-filter');
+
+					filterButtons.forEach(btn => btn.classList.remove('active'));
+					button.classList.add('active');
+
+					portfolioItems.forEach(item => {
+						if (filter === 'semua' || item.getAttribute('data-category') === filter) {
+							item.style.display = 'block';
+						} else {
+							item.style.display = 'none';
+						}
+					});
+				});
+			});
+
+			document.querySelectorAll('.profile-button').forEach(button => {
+				button.addEventListener('click', () => {
+					const doctorCard = button.closest('.col');
+					const image = doctorCard.querySelector('img');
+
+					doctorDialogImage.src = image.src;
+					doctorDialogImage.alt = image.alt;
+					doctorDialogName.textContent = doctorCard.querySelector('.layer h3').textContent;
+					doctorDialogSpecialty.textContent = doctorCard.querySelector('.layer h5').textContent;
+					doctorDialogDescription.textContent = doctorCard.dataset.description;
+					doctorDialog.showModal();
+				});
+			});
+
+			doctorDialogClose.addEventListener('click', () => doctorDialog.close());
+			doctorDialog.addEventListener('click', event => {
+				if (event.target === doctorDialog) {
+					doctorDialog.close();
+				}
+			});
+
+			function setActiveNavLink() {
+				const scrollPosition = window.scrollY;
+				const navOffset = parseFloat(
+					getComputedStyle(document.documentElement).getPropertyValue('--nav-offset')
+				);
+
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop - navOffset;
+					const sectionBottom = sectionTop + section.offsetHeight;
+					const sectionId = section.getAttribute('id');
+
+					if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+						navLinks.forEach(link => {
+							link.classList.remove('active');
+							if (link.getAttribute('href') === `#${sectionId}`) {
+								link.classList.add('active');
+							}
+						});
+					}
+				});
+			}
+
+			window.addEventListener('load', setActiveNavLink);
+			window.addEventListener('scroll', setActiveNavLink);
+		});
+	</script>
+	<!--------service---->
+	<section class="service" id="service">
+		<div class="heading">
+			<h3>Layanan Kami</h3>
+			<h2>Solusi Kesehatan Terbaik</h2>
+			<p>Wujudkan harapan Anda</p>
+		</div>
+
+		<div class="service-content">
+			<div class="row">
+				<div class="s s-one">
+					<img src="img/stethoscope-svgrepo-com.svg">
+				</div>
+				<h3>Konsultasi Dokter Umum</h3>
+				<h5>Layanan Tersedia <span>24 Jam</span></h5>
+				<p>Pemeriksaan kesehatan menyeluruh, diagnosis awal, dan penanganan medis tingkat pertama oleh tim dokter umum berlisensi</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-tow">
+					<img src="img/heartbeat-fill-svgrepo-com.svg">
+				</div>
+				<h3>Poliklinik Spesialis</h3>
+				<h5>Jadwal <span>Senin – Sabtu</span></h5>
+				<p>Layanan konsultasi dan pemeriksaan lanjutan berbagai bidang spesialisasi dengan dukungan peralatan diagnostik modern.</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-three">
+					<img src="img/hospital-bed-svgrepo-com.svg">
+				</div>
+				<h3>Perawatan Rawat Inap</h3>
+				<h5>Menerima <span>BPJS & Asuransi</span></h5>
+				<p>Fasilitas ruang perawatan yang nyaman dengan pemantauan medis intensif 24 jam oleh dokter dan perawat terlatih.</p>
+			</div>
+
+			<div class="row">
+				<div class="s s-four">
+					<img src="img/scalpel-svgrepo-com.svg">
+				</div>
+				<h3>Layanan Bedah & Operasi</h3>
+				<h5>Tim Dokter <span>Spesialis Bedah</span></h5>
+				<p>Tindakan bedah minor maupun mayor dengan standar sterilitas tinggi oleh tim dokter spesialis bedah berpengalaman.</p>
+			</div>
+		</div>
+	</section>
+
+	<!--------work---->
+	<section class="cta">
+		<div class="heading">
+			<h2>Pencapaian<br>Kami</h2>
+		</div>
+
+		<div class="cta-box">
+			<div class="wrap one">
+				<h3>15+</h3>
+				<p>Pemeriksaan Selesai</p>
+			</div>
+
+			<div class="wrap two">
+				<h3>15+</h3>
+				<p> Pasien Puas</p>
+			</div>
+
+			<div class="wrap three">
+				<h3>15+</h3>
+				<p>Pasien Terlayani</p>
+			</div>
+		</div>
+	</section>
+
+	<!--------contact---->
+<section class="contact" id="contact">
+	<div class="container">
+		<div class="center">
+			<h3>Contact Us</h3>
+			<p>Punya pertanyaan atau ingin berkonsultasi? Isi form ini dan kami akan segera menghubungi Anda.</p>
+		</div>
+
+		<div class="action">
+			<form id="contact-form">
+				<input type="text" name="from_name" placeholder="Nama Lengkap" required>
+				<input type="email" name="user_email" placeholder="Email" required>
+				<textarea name="message" placeholder="Ceritakan ide Anda" required></textarea><br>
+				<input type="submit" value="Kirim Pesan">
+			</form>
+		</div>
+
+		<div class="map-container">
+			<h3 style="color: #ffffff;">Lokasi Kami</h3>
+			<div id="map" style="width: 100%; height: 300px;"></div>
+			<p style="color: #ffffff; margin-top: 10px;">
+				Jl. Griya Asri 2 No 22 Blok E3, RT03/RW027, Sumberjaya<br>
+				Kec. Tambun Selatan, Kabupaten Bekasi, Jawa Barat<br>
+				Plus Code: Q3FJ+G8M
+			</p>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	(function() {
+		emailjs.init('-yXEq2VxFiuf4CpDb');
+
+		document.getElementById('contact-form').addEventListener('submit', function(event) {
+			event.preventDefault();
+
+			emailjs.sendForm('NAFIS210108', 'template_vhttq9b', this)
+				.then(function() {
+					alert('Pesan berhasil terkirim! Kami akan segera menghubungi Anda.');
+					document.getElementById('contact-form').reset();
+				}, function(error) {
+					alert('Maaf, ada kendala teknis. Silakan coba lagi: ' + JSON.stringify(error));
+				});
+		});
+
+		window.addEventListener('load', function() {
+			var lokasi = [-6.265066, 107.058433];
+			var map = L.map('map').setView(lokasi, 18);
+			
+			L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+				attribution: 'Tiles &copy; Esri | Sources: Esri, HERE, Garmin, Intermap, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+			}).addTo(map);
+
+			var marker = L.marker(lokasi).addTo(map);
+			marker.bindPopup("<b>Rumah Sakit ABC</b><br>Jl. Griya Asri 2 No 22 Blok E3, RT03/RW027, Sumberjaya<br>Kec. Tambun Selatan, Kabupaten Bekasi<br>Plus Code: Q3FJ+G8M").openPopup();
+
+			L.control.zoom({
+				position: 'bottomright'
+			}).addTo(map);
+
+			setTimeout(function() {
+				map.invalidateSize();
+			}, 100);
+		});
+	})();
+</script>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+	<!--------ends---->
+	<div class="ends">
+		<p>Website Rumah Sakit ABC - PTIK kelompok 4</p>
+	</div>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!--------Link to js---->
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</body>
+</html>
