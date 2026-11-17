@@ -348,9 +348,7 @@
 			<h3 style="color: #ffffff;">Lokasi Kami</h3>
 			<div id="map" style="width: 100%; height: 300px;"></div>
 			<p style="color: #ffffff; margin-top: 10px;">
-				Jl. Griya Asri 2 No 22 Blok E3, RT03/RW027, Sumberjaya<br>
-				Kec. Tambun Selatan, Kabupaten Bekasi, Jawa Barat<br>
-				Plus Code: Q3FJ+G8M
+				Area layanan: Kabupaten Bekasi, Jawa Barat
 			</p>
 		</div>
 	</div>
@@ -373,15 +371,12 @@
 		});
 
 		window.addEventListener('load', function() {
-			var lokasi = [-6.265066, 107.058433];
-			var map = L.map('map').setView(lokasi, 18);
+			var lokasi = [-6.25, 107.15];
+			var map = L.map('map').setView(lokasi, 9);
 			
 			L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
 				attribution: 'Tiles &copy; Esri | Sources: Esri, HERE, Garmin, Intermap, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
 			}).addTo(map);
-
-			var marker = L.marker(lokasi).addTo(map);
-			marker.bindPopup("<b>Rumah Sakit ABC</b><br>Jl. Griya Asri 2 No 22 Blok E3, RT03/RW027, Sumberjaya<br>Kec. Tambun Selatan, Kabupaten Bekasi<br>Plus Code: Q3FJ+G8M").openPopup();
 
 			L.control.zoom({
 				position: 'bottomright'
