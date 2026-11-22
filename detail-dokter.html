@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Profil Dokter - Rumah Sakit ABC</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/svg+xml" href="img/Logo Plus.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="doctor-detail-header">
+		<a href="index.html" class="logo" aria-label="Rumah Sakit ABC - Beranda">
+			<img src="img/Logo.png" alt="Rumah Sakit ABC">
+		</a>
+		<a class="detail-back-link" href="index.html#portfolio">&larr; Kembali ke Profil Dokter</a>
+	</header>
+
+	<main class="doctor-detail-main">
+		<p class="doctor-breadcrumb"><a href="index.html#portfolio">Profil Dokter</a> / Detail Dokter</p>
+
+		<section class="doctor-profile-card" id="doctor-profile" aria-labelledby="doctor-name">
+			<img class="doctor-detail-image" id="doctor-image" src="" alt="">
+			<div class="doctor-profile-copy">
+				<p class="doctor-eyebrow">Rumah Sakit ABC</p>
+				<h1 id="doctor-name"></h1>
+				<p class="doctor-detail-specialty" id="doctor-specialty"></p>
+				<p class="doctor-detail-description" id="doctor-description"></p>
+				<div class="doctor-detail-actions">
+					<a class="btn" href="#practice-schedule">Lihat Jadwal Praktik</a>
+					<a class="btn" id="book-appointment-link" href="#">Buat Janji Temu</a>
+					<a class="doctor-contact-link" href="index.html#contact">Hubungi Rumah Sakit</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="doctor-schedule-card" id="practice-schedule" aria-labelledby="schedule-title">
+			<h2 id="schedule-title">Jadwal Praktik</h2>
+			<p class="doctor-schedule-intro">Pilih waktu kunjungan dengan melihat jadwal praktik dokter berikut.</p>
+			<div class="doctor-schedule-table-wrap">
+				<table class="doctor-schedule-table">
+					<thead>
+						<tr>
+							<th scope="col">Hari</th>
+							<th scope="col">Jam Praktik</th>
+						</tr>
+					</thead>
+					<tbody id="doctor-schedule"></tbody>
+				</table>
+			</div>
+			<p class="doctor-schedule-note">Jadwal yang ditampilkan masih berupa contoh dan perlu disesuaikan dengan jadwal resmi rumah sakit. Hubungi rumah sakit untuk konfirmasi.</p>
+		</section>
+
+		<section class="doctor-profile-error" id="doctor-profile-error" role="status" hidden>
+			<h1>Profil dokter tidak ditemukan</h1>
+			<p>Dokter yang Anda cari tidak tersedia. Silakan kembali ke daftar profil dokter.</p>
+			<a class="btn" href="index.html#portfolio">Kembali ke Profil Dokter</a>
+		</section>
+	</main>
+
+	<footer class="ends">
+		<p>Website Rumah Sakit ABC - PTIK kelompok 4</p>
+	</footer>
+
+	<script src="js/doctors.js"></script>
+	<script src="js/doctor-detail.js"></script>
+</body>
+</html>
