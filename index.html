@@ -14,7 +14,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
 </head>
 <body>
@@ -26,7 +25,7 @@
 		<ul class="navlist">
 			<li><a href="#home" class="active">Beranda</a></li>
 			<li><a href="#about">Tentang Kami</a></li>
-			<li><a href="#portfolio">Profile Dokter</a></li>
+			<li><a href="#portfolio">Profil Dokter</a></li>
 			<li><a href="#service">Layanan</a></li>
 			<li><a href="#contact">Hubungi Kami</a></li>
 		</ul>
@@ -37,18 +36,33 @@
 		<div class="home-text">
 			<h3>Hai! Kami</h3>
 			<h1>Rumah Sakit ABC</h1>
-			<h5>Layanan Kesehatan Terbaik <span>dari Bekasi</span></h5>
+			<h5>Kesehatan Anda,<span> Prioritas Kami</span></h5>
 			<p>Kami menyediakan layanan kesehatan berkualitas tinggi dengan tenaga medis yang kompeten dan fasilitas modern.</p>
 			<div class="social">
 				<a href=""><i class='bx bxl-facebook'></i></a>
 				<a href=""><i class='bx bxl-twitter' ></i></a>
 				<a href=""><i class='bx bxl-instagram'></i></i></a>
 			</div>
-			<a href="#about" class="btn">Kenalan kami lebih dekat</a>
+			<a href="#about" class="btn">Kenali Kami Lebih Dekat</a>
 		</div>
 
 		<div class="home-img">
-			<img src="img/Profile.png">
+			<img src="img/profile.png">
+		</div>
+	</section>
+
+	
+	<!--------About---->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/Pelayanan Rumah Sakit.png">
+		</div>
+
+		<div class="about-text">
+			<h3>Rumah Sakit ABC</h3>
+			<h2>Membantu Anda Menemukan Kesehatan Terbaik</h2>
+			<p>Kami menyediakan layanan kesehatan berkualitas tinggi dengan tenaga medis yang kompeten dan fasilitas modern. Dengan pendekatan yang holistik, kami berkomitmen untuk memberikan perawatan terbaik kepada setiap pasien.</p>
+			<a href="#contact" class="btn">Hubungi Kami</a>
 		</div>
 	</section>
 
@@ -82,24 +96,11 @@
 		</div>
 	</section>
 
-	<!--------About---->
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="img/Pelayanan Rumah Sakit.png">
-		</div>
-
-		<div class="about-text">
-			<h3>Rumah Sakit ABC</h3>
-			<h2>Membantu Anda Menemukan Kesehatan Terbaik</h2>
-			<p>Kami menyediakan layanan kesehatan berkualitas tinggi dengan tenaga medis yang kompeten dan fasilitas modern. Dengan pendekatan yang holistik, kami berkomitmen untuk memberikan perawatan terbaik kepada setiap pasien.</p>
-			<a href="#contact" class="btn">Hubungi Kami</a>
-		</div>
-	</section>
 
 	<!--------portfolio---->
 	<section class="portfolio" id="portfolio">
 		<div class="heading">
-			<h3>Profile Dokter</h3>
+			<h3>Profil Dokter</h3>
 			<h2>Para Dokter Kami</h2>
 			<p>yang ahli dalam bidangnya<br> dan berpengalaman</p>
 		</div>
@@ -111,72 +112,61 @@
 		</div>
 
 		<div class="portfolio-content">
-			<div class="col" data-category="Dokter-Umum" data-description="Berpengalaman dalam penanganan medis tingkat pertama, pemeriksaan kesehatan rutin (medical check-up), serta tata laksana kasus kegawatdaruratan umum dengan pendekatan yang ramah dan komunikatif.">
+			<div class="col" data-category="Dokter-Umum">
 				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Eric Marvin">
 				<div class="layer">
-					<h3>Dokter Eric Marvin</h3>
+					<h3>dr. Eric Marvin</h3>
 					<h5>Dokter Umum</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=eric">Selengkapnya</a>
 				</div>
 			</div>
 
-			<div class="col" data-category="Dokter-Spesialis" data-description="Ahli dalam diagnosis, pencegahan, dan penanganan penyakit kardiovaskular, termasuk hipertensi, penyakit jantung koroner, serta pemantauan rehabilitasi jantung terpadu.">
+			<div class="col" data-category="Dokter-Spesialis">
 				<img src="img/Dokter PR.jpg" alt="Foto Dokter Siti Aisyah">
 				<div class="layer">
-					<h3>Dokter Siti Aisyah</h3>
+					<h3>dr. Siti Aisyah, Sp.JP</h3>
 					<h5>Dokter Spesialis Jantung</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=siti">Selengkapnya</a>
 				</div>
 			</div>
 
-			<div class="col" data-category="Dokter-Spesialis" data-description="Berfokus pada pemeriksaan kesehatan indra penglihatan secara menyeluruh, penanganan gangguan refraksi, katarak, glaukoma, serta tindakan bedah mikro mata modern.">
+			<div class="col" data-category="Dokter-Spesialis">
 				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Haris Hartanto">
 				<div class="layer">
-					<h3>Dokter Haris Hartanto</h3>
+					<h3>dr. Haris Hartanto, Sp.M</h3>
 					<h5>Dokter Spesialis Mata</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=haris">Selengkapnya</a>
 				</div>
 			</div>
 
-			<div class="col" data-category="Dokter-Spesialis" data-description="Menangani berbagai permasalahan kesehatan kulit, alergi, infeksi kulit, hingga perawatan peremajaan dan estetika medis berbasis klinis yang aman bagi pasien.">
+			<div class="col" data-category="Dokter-Spesialis">
 				<img src="img/Dokter PR.jpg" alt="Foto Dokter Ester Flora">
 				<div class="layer">
-					<h3>Dokter Ester Flora</h3>
+					<h3>dr. Ester Flora, Sp.DVE</h3>
 					<h5>Dokter Spesialis Kulit</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=ester">Selengkapnya</a>
 				</div>
 			</div>
 
-			<div class="col" data-category="Dokter-Umum" data-description="Berdedikasi memberikan pelayanan konsultasi kesehatan keluarga, imunisasi, perawatan luka, serta edukasi pencegahan penyakit dengan ketelitian dan empati tinggi.">
+			<div class="col" data-category="Dokter-Umum">
 				<img src="img/Dokter PR.jpg" alt="Foto Dokter Putri Nuraini">
 				<div class="layer">
-					<h3>Dokter Putri Nuraini</h3>
+					<h3>dr. Putri Nuraini</h3>
 					<h5>Dokter Umum</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=putri">Selengkapnya</a>
 				</div>
 			</div>
 
-			<div class="col" data-category="Dokter-Spesialis" data-description="Berpengalaman dalam menangani gangguan sistem saraf pusat dan tepi, termasuk penanganan kasus stroke, migrain kronis, vertigo, saraf terjepit, serta gangguan memori.">
+			<div class="col" data-category="Dokter-Spesialis">
 				<img src="img/Dokter Lk.jpg" alt="Foto Dokter Ahmad Rifai">
 				<div class="layer">
-					<h3>Dokter Ahmad Rifai</h3>
+					<h3>dr. Ahmad Rifai, Sp.N</h3>
 					<h5>Dokter Spesialis Saraf</h5>
-					<button class="profile-button" type="button">Lihat Profil</button>
+					<a class="profile-button" href="detail-dokter.html?id=ahmad">Selengkapnya</a>
 				</div>
 			</div>
 
 		</div>
-		<dialog class="doctor-dialog" aria-labelledby="doctor-dialog-name">
-			<button class="doctor-dialog-close" type="button" aria-label="Tutup profil">&times;</button>
-			<div class="doctor-dialog-content">
-				<img class="doctor-dialog-image" src="" alt="">
-				<div class="doctor-dialog-details">
-					<h2 id="doctor-dialog-name"></h2>
-					<p class="doctor-dialog-specialty"></p>
-					<p class="doctor-dialog-description"></p>
-				</div>
-			</div>
-		</dialog>
 	</section>
 
 	<script>
@@ -185,13 +175,6 @@
 			const portfolioItems = document.querySelectorAll('.portfolio-content .col');
 			const navLinks = document.querySelectorAll('.navlist a');
 			const sections = document.querySelectorAll('section[id]');
-			const doctorDialog = document.querySelector('.doctor-dialog');
-			const doctorDialogImage = doctorDialog.querySelector('.doctor-dialog-image');
-			const doctorDialogName = doctorDialog.querySelector('#doctor-dialog-name');
-			const doctorDialogSpecialty = doctorDialog.querySelector('.doctor-dialog-specialty');
-			const doctorDialogDescription = doctorDialog.querySelector('.doctor-dialog-description');
-			const doctorDialogClose = doctorDialog.querySelector('.doctor-dialog-close');
-
 			filterButtons.forEach(button => {
 				button.addEventListener('click', () => {
 					const filter = button.getAttribute('data-filter');
@@ -207,27 +190,6 @@
 						}
 					});
 				});
-			});
-
-			document.querySelectorAll('.profile-button').forEach(button => {
-				button.addEventListener('click', () => {
-					const doctorCard = button.closest('.col');
-					const image = doctorCard.querySelector('img');
-
-					doctorDialogImage.src = image.src;
-					doctorDialogImage.alt = image.alt;
-					doctorDialogName.textContent = doctorCard.querySelector('.layer h3').textContent;
-					doctorDialogSpecialty.textContent = doctorCard.querySelector('.layer h5').textContent;
-					doctorDialogDescription.textContent = doctorCard.dataset.description;
-					doctorDialog.showModal();
-				});
-			});
-
-			doctorDialogClose.addEventListener('click', () => doctorDialog.close());
-			doctorDialog.addEventListener('click', event => {
-				if (event.target === doctorDialog) {
-					doctorDialog.close();
-				}
 			});
 
 			function setActiveNavLink() {
@@ -311,17 +273,17 @@
 
 		<div class="cta-box">
 			<div class="wrap one">
-				<h3>15+</h3>
+				<h3>150+</h3>
 				<p>Pemeriksaan Selesai</p>
 			</div>
 
 			<div class="wrap two">
-				<h3>15+</h3>
+				<h3>150+</h3>
 				<p> Pasien Puas</p>
 			</div>
 
 			<div class="wrap three">
-				<h3>15+</h3>
+				<h3>150+</h3>
 				<p>Pasien Terlayani</p>
 			</div>
 		</div>
@@ -332,7 +294,7 @@
 	<div class="container">
 		<div class="center">
 			<h3>Contact Us</h3>
-			<p>Punya pertanyaan atau ingin berkonsultasi? Isi form ini dan kami akan segera menghubungi Anda.</p>
+			<p>Formulir kontak ini hanya tampilan dan belum dapat mengirim pesan.</p>
 		</div>
 
 		<div class="action">
@@ -340,7 +302,7 @@
 				<input type="text" name="from_name" placeholder="Nama Lengkap" required>
 				<input type="email" name="user_email" placeholder="Email" required>
 				<textarea name="message" placeholder="Isi disini" required></textarea><br>
-				<input type="submit" value="Kirim Pesan">
+				<input type="button" value="Kirim Pesan">
 			</form>
 		</div>
 
@@ -355,38 +317,22 @@
 </section>
 
 <script type="text/javascript">
-	(function() {
-		emailjs.init('-yXEq2VxFiuf4CpDb');
-
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			event.preventDefault();
-
-			emailjs.sendForm('NAFIS210108', 'template_vhttq9b', this)
-				.then(function() {
-					alert('Pesan berhasil terkirim! Kami akan segera menghubungi Anda.');
-					document.getElementById('contact-form').reset();
-				}, function(error) {
-					alert('Maaf, ada kendala teknis. Silakan coba lagi: ' + JSON.stringify(error));
-				});
+	window.addEventListener('load', function() {
+		var lokasi = [-6.25, 107.15];
+		var map = L.map('map').setView(lokasi, 9);
+		
+		L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+			attribution: 'Tiles &copy; Esri | Sources: Esri, HERE, Garmin, Intermap, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
 		});
 
-		window.addEventListener('load', function() {
-			var lokasi = [-6.25, 107.15];
-			var map = L.map('map').setView(lokasi, 9);
-			
-			L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-				attribution: 'Tiles &copy; Esri | Sources: Esri, HERE, Garmin, Intermap, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
-			}).addTo(map);
+		L.control.zoom({
+			position: 'bottomright'
+		}).addTo(map);
 
-			L.control.zoom({
-				position: 'bottomright'
-			}).addTo(map);
-
-			setTimeout(function() {
-				map.invalidateSize();
-			}, 100);
-		});
-	})();
+		setTimeout(function() {
+			map.invalidateSize();
+		}, 100);
+	});
 </script>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
