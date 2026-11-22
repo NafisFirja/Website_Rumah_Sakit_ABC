@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Janji Temu - Rumah Sakit ABC</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/svg+xml" href="img/Logo Plus.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="doctor-detail-header">
+		<a href="index.html" class="logo" aria-label="Rumah Sakit ABC - Beranda">
+			<img src="img/Logo.png" alt="Rumah Sakit ABC">
+		</a>
+		<a class="detail-back-link" id="back-to-doctor" href="index.html#portfolio">&larr; Kembali ke Profil Dokter</a>
+	</header>
+
+	<main class="doctor-detail-main appointment-page-main">
+		<p class="doctor-breadcrumb"><a href="index.html#portfolio">Profil Dokter</a> / Form Janji Temu</p>
+
+		<div id="appointment-page-content">
+			<section class="appointment-doctor-card" aria-labelledby="selected-doctor-name">
+				<img class="appointment-doctor-image" id="selected-doctor-image" src="" alt="">
+				<div class="appointment-doctor-details">
+					<div class="appointment-doctor-title-row">
+						<div class="appointment-doctor-title">
+							<p class="doctor-eyebrow">Dokter yang dipilih</p>
+							<h1 id="selected-doctor-name"></h1>
+							<p class="doctor-detail-specialty" id="selected-doctor-specialty"></p>
+						</div>
+						<div class="appointment-doctor-switcher">
+							<label for="appointment-doctor">Ganti dokter</label>
+							<select id="appointment-doctor" name="appointment-doctor" aria-describedby="doctor-change-help"></select>
+							<p id="doctor-change-help">Perubahan dokter akan memperbarui profil dan jadwal praktik.</p>
+						</div>
+					</div>
+					<p class="doctor-detail-description" id="selected-doctor-description"></p>
+					<div class="appointment-doctor-schedule">
+						<h2>Jadwal Praktik</h2>
+						<div class="doctor-schedule-table-wrap">
+							<table class="doctor-schedule-table">
+								<thead>
+									<tr>
+										<th scope="col">Hari</th>
+										<th scope="col">Jam Praktik</th>
+									</tr>
+								</thead>
+								<tbody id="selected-doctor-schedule"></tbody>
+							</table>
+						</div>
+						<p class="doctor-schedule-note">Jadwal yang ditampilkan masih berupa contoh dan perlu disesuaikan dengan jadwal resmi rumah sakit. Hubungi rumah sakit untuk konfirmasi.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="appointment-section" id="appointment" aria-labelledby="appointment-title">
+				<div class="appointment-heading">
+					<p class="doctor-eyebrow">Pendaftaran Pasien</p>
+					<h2 id="appointment-title">Form Janji Temu</h2>
+					<p>Lengkapi data berikut untuk menyiapkan permintaan kunjungan Anda.</p>
+				</div>
+
+				<form class="appointment-form" id="appointment-form">
+					<fieldset class="appointment-fieldset">
+						<legend>Data Identitas &amp; Kontak Pasien</legend>
+						<div class="appointment-field-grid">
+							<div class="appointment-field">
+								<label for="patient-name">Nama lengkap</label>
+								<input id="patient-name" name="patient-name" type="text" autocomplete="name" placeholder="Sesuai identitas" required>
+							</div>
+							<div class="appointment-field">
+								<label for="patient-phone">Nomor telepon / WhatsApp</label>
+								<input id="patient-phone" name="patient-phone" type="tel" autocomplete="tel" placeholder="Contoh: 081234567890" required>
+							</div>
+							<div class="appointment-field">
+								<label for="patient-email">Alamat email <span class="appointment-optional">(opsional)</span></label>
+								<input id="patient-email" name="patient-email" type="email" autocomplete="email" placeholder="nama@email.com">
+							</div>
+							<div class="appointment-field">
+								<label for="patient-birth-date">Tanggal lahir</label>
+								<input id="patient-birth-date" name="patient-birth-date" type="date" autocomplete="bday" required>
+							</div>
+							<div class="appointment-field">
+								<label for="patient-gender">Jenis kelamin</label>
+								<select id="patient-gender" name="patient-gender" required>
+									<option value="">Pilih jenis kelamin</option>
+									<option value="laki-laki">Laki-laki</option>
+									<option value="perempuan">Perempuan</option>
+									<option value="tidak-menyebutkan">Memilih tidak menyebutkan</option>
+								</select>
+							</div>
+							<div class="appointment-field">
+								<label for="patient-identity">Nomor identitas</label>
+								<input id="patient-identity" name="patient-identity" type="text" placeholder="KTP, nomor rekam medis, atau paspor">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="appointment-fieldset">
+						<legend>Detail Kunjungan</legend>
+						<div class="appointment-field-grid">
+							<div class="appointment-field">
+								<label for="patient-status">Status pasien</label>
+								<select id="patient-status" name="patient-status" required>
+									<option value="">Pilih status pasien</option>
+									<option value="baru">Pasien baru</option>
+									<option value="lama">Pasien lama / berulang</option>
+								</select>
+							</div>
+							<div class="appointment-field">
+								<label for="appointment-date">Tanggal kunjungan yang diinginkan</label>
+								<input id="appointment-date" name="appointment-date" type="date" required>
+							</div>
+							<div class="appointment-field">
+								<label for="appointment-time">Jam kunjungan yang diinginkan</label>
+								<input id="appointment-time" name="appointment-time" type="time" required>
+							</div>
+							<div class="appointment-field appointment-field-full">
+								<label for="appointment-location">Lokasi fasilitas kesehatan / cabang</label>
+								<select id="appointment-location" name="appointment-location" required>
+									<option value="">Pilih lokasi</option>
+									<option value="rumah-sakit-abc">Rumah Sakit ABC</option>
+								</select>
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="appointment-fieldset">
+						<legend>Kebutuhan Medis &amp; Administrasi</legend>
+						<div class="appointment-field-grid">
+							<div class="appointment-field appointment-field-full">
+								<label for="visit-reason">Keluhan utama / alasan kunjungan</label>
+								<textarea id="visit-reason" name="visit-reason" rows="4" placeholder="Ceritakan secara singkat alasan kunjungan Anda" required></textarea>
+							</div>
+							<div class="appointment-field">
+								<label for="payment-method">Metode pembayaran / penjamin</label>
+								<select id="payment-method" name="payment-method" required>
+									<option value="">Pilih metode pembayaran</option>
+									<option value="pribadi">Pembayaran pribadi</option>
+									<option value="asuransi">Asuransi kesehatan</option>
+									<option value="bpjs">BPJS / JKN</option>
+								</select>
+							</div>
+							<div class="appointment-field appointment-field-full">
+								<label for="medical-notes">Riwayat medis, obat yang dikonsumsi, atau alergi <span class="appointment-optional">(opsional)</span></label>
+								<textarea id="medical-notes" name="medical-notes" rows="4" placeholder="Tuliskan informasi yang perlu diketahui dokter"></textarea>
+							</div>
+						</div>
+					</fieldset>
+
+					<label class="appointment-consent" for="privacy-consent">
+						<input id="privacy-consent" name="privacy-consent" type="checkbox" required>
+						<span>Saya menyetujui kebijakan privasi dan syarat layanan Rumah Sakit ABC.</span>
+					</label>
+
+					<button class="btn appointment-submit" type="button">Ajukan Janji Temu</button>
+					<p class="appointment-submit-note"></p>
+				</form>
+			</section>
+		</div>
+
+		<section class="doctor-profile-error" id="appointment-page-error" role="status" hidden>
+			<h1>Dokter belum dipilih</h1>
+			<p>Silakan pilih dokter dari halaman profil dokter sebelum mengisi form janji temu.</p>
+			<a class="btn" href="index.html#portfolio">Lihat Profil Dokter</a>
+		</section>
+	</main>
+
+	<footer class="ends">
+		<p>Website Rumah Sakit ABC - PTIK kelompok 4</p>
+	</footer>
+
+	<script src="js/doctors.js"></script>
+	<script src="js/appointment.js"></script>
+</body>
+</html>
